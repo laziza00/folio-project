@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>folio</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,6 +14,264 @@
 
 <body>
 
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-inner row middle between">
+        <div class="logo-site">
+          <a class="sit-logo-link text-none" href="#">
+            <h1 class="site-logo">folio</h1>
+          </a>
+        </div>
+        <nav class="site-nav">
+          <ul class="nav-list row middle between style-none">
+            <li class="nav-item hover-item row middle">
+              creative demos<i class='bx bxs-chevron-down'></i>
+              <div class="nav-hover-box">
+                <ul class="nav-hover-list">
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">designer01</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">designer02</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">developer01</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">developer02</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">agency01</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">agency02</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">photography01</a></li>
+                  <li class="nav-hover-item"> <a class="design-link text-none" href="#">photography02</a></li>
+
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item hover-item row middle">
+              pages
+              <i class='bx bxs-chevron-down'></i>
+              <div class="nav-hover-box">
+                <ul class="nav-hover-list">
+                  <li class="nav-hover-item row middle portfolio"> portfolio
+                    <i class='bx bxs-chevron-right'></i>
+                    <div class="pages-hover-box">
+                      <ul class="porfolio-list style-none">
+                        <li class="portfolio-item row middle masonry">
+                          masonry style<i class='bx bxs-chevron-right'></i>
+                          <div class="pages-hover-box details-hover-box">
+                            <ul class="nav-hover-list">
+                              <li class="nav-hover-item"> 
+                                <a class="portfolio-link text-none" href="#">masonry grid 2</a></li>
+                              <li class="nav-hover-item"> 
+                                <a class="portfolio-link text-none" href="#">masonry grid 3
+                                  fluid</a></li>
+                              <li class="nav-hover-item"> 
+                                <a class="portfolio-link text-none" href="#">masonry grid 3</a></li>
+                              <li class="nav-hover-item"> 
+                                <a class="portfolio-link text-none" href="#">masonry grid 4
+                                  fluid</a></li>
+                              <li class="nav-hover-item"> 
+                                <a class="portfolio-link text-none" href="#">masonry grid4</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="portfolio-item row middle">
+                          grid style<i class='bx bxs-chevron-right'></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-hover-item row middle portfolio">portfolio details
+                    <i class='bx bxs-chevron-right'></i>
+                    <div class="pages-hover-box ">
+                      <ul class="nav-hover-list">
+                        <li class="nav-hover-item"> <a class="portfolio-link text-none" href="#">details01</a></li>
+                        <li class="nav-hover-item"> <a class="portfolio-link text-none" href="#">details02</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-hover-item"> <a class="nav-link portfolio-link text-none" href="#">about</a></li>
+                  <li class="nav-hover-item"> <a class="nav-link portfolio-link text-none" href="#">contact</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item hover-item row middle">
+              <a class="nav-link text-none" href="#">
+                about me.
+              </a>
+            </li>
+            <li class="nav-item hover-item row middle">
+              <a class="nav-link text-none" href="#">
+                contact.
+              </a>
+
+
+            </li>
+            <li class="nav-item hover-item row middle">
+              <a class="nav-link text-none" href="#">
+                support
+              </a>
+
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero-section">
+    <div class="container">
+      <div class="hero-inner row middle">
+        <div class="hero-info">
+          <p class="hero-text">ILLUSTRATOR, GRAPHIC DESIGNER, TRAVELER</p>
+          <h1 class="hero-title">I design digital crafts for clients.</h1>
+          <a class="hero-link text-none" href="brand">
+            explore works <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
+        <div class="hero-img"></div>
+      </div>
+    </div>
+
+    <div class="btndarklight" id="btndark">
+      <i class='bx bx-chevron-left btn-dark-chevron'></i>
+    </div>
+    <div class="modalbox" id="modalBox">
+      <button class="close" id="closebtn">X</button>
+      <h3 class="btn-title">change version</h3>
+      <div class="btns row middle">
+        <button class="light-box" id="lightbtn">dark</button>
+        <button class="light-dark" id="darktbtn">light </button>
+      </div>
+    </div>
+
+
+    <div class="show"></div>
+  </section>
+<section class="brand-section" id="brand">
+  <div class="brand-inner">
+    <ul class="brand-list row style-none">
+      <li class="brand-item">
+        <a class="brand-link active" href="#">
+          all works
+        </a>
+      </li>
+      <li class="brand-item">
+        <a class="brand-link" href="#">
+          branding
+        </a>
+      </li>
+      <li class="brand-item">
+        <a class="brand-link" href="#">
+          ux design
+        </a>
+      </li>
+      <li class="brand-item">
+        <a class="brand-link" href="#">
+          photography
+        </a>
+      </li>
+    </ul>
+    <div class="content">
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">web</h5>
+         <a class="content-link" href="#">perfumed</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">photography</h5>
+         <a class="content-link" href="#">travel app</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">marketing</h5>
+         <a class="content-link" href="#">shopper</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">branding</h5>
+         <a class="content-link" href="#">candy store</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">barnding</h5>
+         <a class="content-link" href="#">travel app</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">branding</h5>
+         <a class="content-link" href="#">ice cream</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">branding</h5>
+         <a class="content-link" href="#">camera</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">branding</h5>
+         <a class="content-link" href="#">smart watch</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">marketing</h5>
+         <a class="content-link" href="#">smart film</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">marketing</h5>
+         <a class="content-link" href="#">cofee cream</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">marketing</h5>
+         <a class="content-link" href="#">noodles</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">ux-design</h5>
+         <a class="content-link" href="#">laptop desk</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">ux-design</h5>
+         <a class="content-link" href="#">candy store</a> 
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-content-inner">
+          <h5 class="content-title">ux-design</h5>
+         <a class="content-link" href="#">cafee roast</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="illustration">
+  <div class="container">
+    <div class="illustr-inner">
+      <div class="illustr-title-box row middle">
+        <div class="around-green"></div>
+        <h3 class="around-title">AVAILABLE FOR FREELANCE PROJECTS</h3>
+      </div>
+      <div class="illustr-title-box">
+      <h2 class="illustr-title">Do you have illustration project? Let's talk.</h2>
+      </div>
+     
+      <a class="hero-link illust-link row middle" href="#"><i class='bx bxs-message-rounded' style='color:#ece3e3'  ></i>let's talk now</a>
+      <div class="copyright-part">
+        <p class="copyright">© 2020 ALL RIGHT RESEVED</p>
+      </div>
+    </div>
+  </div>
+</section>
   <script src="js/main.js"></script>
 </body>
 
