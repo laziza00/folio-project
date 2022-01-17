@@ -98,11 +98,12 @@ body {
   border-bottom-left-radius:  5px;
   border-bottom-right-radius:  5px;
   display: none;
-  transition: all 1s ease;
- 
+  animation: header-anim;
+  animation-duration: 0.5s;
+  transform: translate(0, -20px);
 }
 .hover-item:hover .nav-hover-box{
-  top: 100%;
+  top: 120%;
   display: block;
 }
 .hover-item:hover{
@@ -114,7 +115,22 @@ body {
   color: #495fef;
 }
 
-
+@keyframes header-anim{
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(0, -20px);
+  }
+}
+@keyframes header-anim2{
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(20px, 0);
+  }
+}
 
 .portfolio{
   position: relative;
@@ -122,7 +138,7 @@ body {
 .pages-hover-box{
   position: absolute;
   top: -9%;
-  left: -142%;
+  left: -162%;
   width: 220px;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2); 
@@ -132,6 +148,9 @@ body {
   border-bottom-left-radius:  5px;
   border-bottom-right-radius:  5px;
   display: none;
+  animation: header-anim2;
+  animation-duration: 0.5s;
+  transform: translate(20px, 0);
 }
 .details-hover-box{
   position: absolute;
@@ -153,7 +172,7 @@ body {
 }
 
 .portfolio:hover .pages-hover-box{
-  left: -132%;
+  left: -143%;
   display: block;
 }
 
@@ -305,8 +324,6 @@ body {
   justify-content: center;
 }
 
-
-
 .modalbox{
   display: none;
   width: 165px;
@@ -346,6 +363,7 @@ body {
   border-end-start-radius: 20px;
   border-top-left-radius: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .light-dark{
     background-color:  rgb(206, 212, 231);
@@ -361,6 +379,7 @@ body {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .close{
   position: absolute;
@@ -381,6 +400,16 @@ body {
   top: 13px;
   right: 0px;
 }
+.light-box:focus{
+  background-color: rgb(206, 212, 231);
+}
+.light-box:focus{
+  background-color: #99aff5;
+}
+
+
+
+
 
 
 
@@ -586,7 +615,7 @@ body {
   transition: all 0.4s ease;
 }
 .content-link:hover{
-  color: var(--main-blue-color);
+  color: #495fef;
   transition: all 0.4s ease;
   cursor: pointer;
 }
@@ -605,7 +634,6 @@ body {
   padding-top: 100px 0;
 }
 .illustr-inner{
-  /* display: flex; */
   justify-content: center;
 }
 
@@ -640,9 +668,6 @@ body {
   letter-spacing: -0.2rem;
   width: 802px;
   margin: 0 auto;
-
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
 }
 .illust-link{
@@ -665,5 +690,5 @@ body {
 .copyright{
   font-weight: 700;
   font-size: 13px;
-  color: var(--nav-color);
+  color: var(--text-color);
 }
