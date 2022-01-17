@@ -9,7 +9,7 @@ elmodalbox.classList.add('show');
 });
 
 elclose.addEventListener('click',function () {
-elmodalbtnbox.classList.remove('show');
+elmodalbox.classList.remove('show');
  });
 
 

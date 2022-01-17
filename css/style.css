@@ -214,7 +214,7 @@ body {
   width: 100%;
   top: 20%;
   left: 0;
-  z-index: -100;
+  z-index: 1;
   overflow: hidden;
 }
 .hero-inner{
@@ -278,11 +278,14 @@ body {
 
 
 
-
+.change-modal{
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  top: 220px;
+  transition: all 0.5s ease;
+}
 .btndarklight{
-  /* position: absolute;
-  top: 10%;
-  right: 165px; */
   width: 30px;
   height: 50px;
   color: #fff;
@@ -305,21 +308,22 @@ body {
 
 
 .modalbox{
-  /* position: absolute;
-  top: 10%;
-  right: 0px; */
-  background-color:  #495fef;
+  display: none;
   width: 165px;
-  padding: 12px;
-  border-bottom-left-radius: 10px;
+  padding: 15px 13px;
+  background-color: rgb(73, 95, 239);
+  position: relative;
+  top: -50px;
+  border-radius: 0 0 0 30px;
   transition: all 0.4s ease;
-  cursor: pointer;
-  z-index: 200;
 }
+
+
+
 .btn-title{
   color: #fff;
   font-size: 15px;
-  padding-left: 15px;
+  padding-left: 10px;
   font-weight: 700;
   line-height: 26px;
   padding-bottom: 8px;
@@ -360,8 +364,8 @@ body {
 }
 .close{
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 8%;
+  right: 3%;
   font-size: 14px;
   color: #fff;
   background-color: transparent;
@@ -371,6 +375,11 @@ body {
 }
 .show{
   display: block;
+}
+.close-chevron{
+  position: relative;
+  top: 13px;
+  right: 0px;
 }
 
 
@@ -382,8 +391,7 @@ body {
   left:0;
 }
 .brand-list{
-  /* margin-bottom: 30px; */
-  /* justify-content: space-evenly; */
+ 
 }
 .brand-inner{
   padding-bottom: 100px;
