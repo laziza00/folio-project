@@ -383,23 +383,23 @@ body {
 }
 .close{
   position: absolute;
-  top: 8%;
-  right: 3%;
+  top: 0%;
+  right: 165px;
   font-size: 14px;
   color: #fff;
-  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  width: 30px;
+  padding: 15px 5px;
+  background-color: #495fef;
+  border-end-start-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .show{
   display: block;
 }
-.close-chevron{
-  position: relative;
-  top: 13px;
-  right: 0px;
-}
+
 .light-box:focus{
   background-color: rgb(206, 212, 231);
 }
