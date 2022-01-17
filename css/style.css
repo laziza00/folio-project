@@ -13,11 +13,13 @@
   --text-color: #161c2d;
   --brand-color: #161c2db3;
   --bg-color: #fff ;
+  /* --content-color: #fff; */
 }
 .dark{
   --bg-color:  #161c2d;
   --text-color: #fff;
   --brand-color: #fff;
+  /* --content-color: #000; */
 }
 .light{
   --text-color: #161c2d;
@@ -31,6 +33,8 @@ body {
   display: flex;
   font-family: 'Inter', sans-serif;
   flex-direction: column;
+  padding-top: 100px;
+
 }
 .container{
   width: 1200px;
@@ -51,7 +55,6 @@ body {
   left: 0;
   padding: 8px 16px;
   z-index: 250;
-  /* margin-bottom: 100px; */
 }
 .header-container{
   width: 1250px;
@@ -152,10 +155,10 @@ body {
   animation-duration: 0.5s;
   transform: translate(20px, 0);
 }
-.details-hover-box{
+.porto-detail-hover-box{
   position: absolute;
   top: 19%;
-  left: 142px;
+  left: -240px;
   width: 220px;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2); 
@@ -165,13 +168,20 @@ body {
   border-bottom-left-radius:  5px;
   border-bottom-right-radius:  5px;
   display: none;
-}
-.nav-item .nav-hover-box .nav-hover-item :hover .details-hover-box{
-  display: block;
-  /* left: -132%; */
+  animation: header-anim2;
+  animation-duration: 0.5s;
+  transform: translate(20px, 0);
 }
 
-.portfolio:hover .pages-hover-box{
+.nav-item .nav-hover-box .nav-hover-list.nav-hover-item:nth-child(2) :hover .porto-detail-hover-box{
+  display: block;
+}
+
+.nav-item .nav-hover-box .nav-hover-item :hover .details-hover-box{
+  display: block;
+}
+
+.hover-item .nav-hover-box .nav-hover-list .nav-hover-item:nth-child(1):hover  .pages-hover-box{
   left: -143%;
   display: block;
 }
@@ -186,6 +196,12 @@ body {
 }
 .nav-hover-list:hover .nav-hover-item.portfolio{
   color: #495fef;
+}
+.nav-hover-item:nth-child(2):hover{
+  color: #495fef;
+}
+.nav-hover-item:nth-child(2):hover .pages-hover-box{
+    display: block;
 }
 
 
@@ -229,10 +245,10 @@ body {
 
 
 #hero-section{
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   top: 20%;
-  left: 0;
+  left: 0; */
   z-index: 1;
   overflow: hidden;
 }
@@ -414,10 +430,10 @@ body {
 
 
 .brand-section{
-  position: absolute;
+  /* position: absolute;
   width: 100vw;
   top: 140%;
-  left:0;
+  left:0; */
 }
 .brand-list{
  
@@ -585,7 +601,7 @@ body {
 
 .item-content-inner{
   width: 270px;
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: #fff;
   height: 98px;
   position: absolute;
   bottom: 0;
